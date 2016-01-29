@@ -2,8 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script>
-for (i = 1; i <= 100; i++) {
+
+<script>
+	var number = parseInt(prompt("Please enter a number from 1 to 100",""))
+
+	while (isNaN(number)){
+	number = parseInt(prompt("You didn't enter a number wise guy",""))
+	}
+
+	if (!isNaN(number)){
+	alert("Thanks for the digits")
+	}
+
+for (i = number; i <= 100; i++) {
    if(i%3==0 && i%5==0){
    document.write("FizzBuzz"+"<br>");
 }
